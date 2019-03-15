@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        .container {
+            margin-top: 50px
+        }
+        .alert {
+            margin-top: 30px
+        }
+        #result {
+            visibility: hidden
+        }
+    </style>
+
+    <title>Number to Text Sample</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Number to Text Sample</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="eg: Joe Blogs">
+                </div>
+                <div class="form-group">
+                    <label for="number">Amount</label>
+                    <input type="text" min="0" id="number" class="form-control" placeholder="Number OR Amount"
+                        onkeypress="return check(event,this)" " />
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="GetResults()">Submit & Convert</button>
+                <div id="result" class="alert alert-primary"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
